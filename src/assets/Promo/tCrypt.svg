@@ -1,0 +1,19 @@
+<svg width="99" height="99" viewBox="0 0 99 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_df_14_97)">
+<path d="M61.7846 70.5692C73.2636 63.9418 77.1966 49.2636 70.5692 37.7846C63.9418 26.3056 49.2636 22.3726 37.7846 29C26.3056 35.6274 22.3726 50.3056 29 61.7846C35.6274 73.2636 50.3056 77.1966 61.7846 70.5692Z" fill="#26A17B"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M53.3188 50.1397L53.3173 50.1371C53.1804 50.23 52.4693 50.6994 50.826 51.6481C49.514 52.4056 48.5679 52.8999 48.2341 53.0718L48.2364 53.0757C43.0575 55.7696 38.7799 57.0666 38.1724 56.0144C37.5657 54.9635 40.8277 51.9075 45.7479 48.7655L47.7309 52.2002C48.0743 52.0331 49.0523 51.5429 50.3591 50.7884C51.927 49.8832 52.6755 49.3645 52.8148 49.2667L50.8325 45.8334C56.0025 43.1481 60.271 41.8563 60.877 42.9059C61.4845 43.9581 58.23 47.0062 53.3188 50.1397ZM50.6263 45.4761L48.8518 42.4026L55.8848 38.3421L53.1788 33.6552L34.0296 44.7109L36.7356 49.3979L43.7686 45.3374L45.5424 48.4096C39.9781 51.972 36.3336 55.5865 37.1166 56.9427C37.8996 58.2989 42.8514 56.9486 48.7194 53.9123L54.4059 63.7616L59.489 60.8269L53.801 50.975C59.3562 47.4178 62.9911 43.8106 62.2088 42.4557C61.4266 41.1008 56.4852 42.4451 50.6263 45.4761Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_df_14_97" x="0.780518" y="0.780602" width="98.0081" height="98.008" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="12.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.14902 0 0 0 0 0.631373 0 0 0 0 0.482353 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_14_97"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_14_97" result="shape"/>
+<feGaussianBlur stdDeviation="1" result="effect2_foregroundBlur_14_97"/>
+</filter>
+</defs>
+</svg>

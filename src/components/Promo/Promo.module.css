@@ -1,0 +1,128 @@
+.root {
+  background: no-repeat center center
+    url("../../assets/Promo/backgroundPict.png") #141118;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 148px;
+  padding-bottom: 18px;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 98px;
+  text-align: center;
+  color: #fff;
+}
+
+.headerGradient {
+  background: linear-gradient(90deg, #9f4bfd 0%, #dc4cfd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  margin-top: 72px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  color: #a7a7a7;
+}
+
+.list {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-align: center;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #a7a7a7;
+}
+
+.button {
+  margin-top: 56px;
+  width: 260px;
+  height: 60px;
+  background: linear-gradient(90deg, #9f4bfd 0%, #dc4cfd 100%);
+  box-shadow: 0px 2px 8px 1px rgba(220, 76, 253, 0.25);
+  border-radius: 8px;
+  color: #fff;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.arrow {
+  margin-top: 74px;
+  cursor: pointer;
+}
+
+.light {
+  color: #fff;
+}
+
+.purple {
+  color: #dc4cfd;
+}
+
+.bitCoin,
+.candy,
+.eos,
+.ethereum,
+.sCrypt,
+.tCrypt,
+.bitCoinBlur {
+  position: absolute;
+}
+
+.bitCoin {
+  top: 225px;
+  right: 154px;
+}
+
+.candy {
+  top: 270px;
+  right: 296px;
+}
+
+.eos {
+  top: 442px;
+  right: 256px;
+}
+
+.ethereum {
+  top: 370px;
+  left: 242px;
+}
+
+.sCrypt {
+  width: 30px;
+  height: 30px;
+  background: #3e73c4;
+  filter: blur(0.8px);
+  border-radius: 50%;
+  bottom: 146px;
+  right: 150px;
+}
+
+.tCrypt {
+  top: 146px;
+  left: 160px;
+}
+
+.bitCoinBlur {
+  bottom: 98px;
+  left: 144px;
+  rotate: -70deg;
+  transform: scale(1.5);
+  filter: blur(2.8px);
+}
