@@ -1,0 +1,80 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0 100px;
+  background: linear-gradient(179.44deg, #141118 0.51%, #110a18 99.55%);
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+.header {
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.list {
+  margin-top: 74px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 1400px;
+  padding: 0 70px 0 64px;
+}
+
+.itemContent {
+  display: flex;
+  gap: 36px;
+  justify-content: flex-start;
+}
+
+.itemContent:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.clientInfo {
+  display: flex;
+  min-width: 250px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: -60px;
+}
+
+.clientName {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.clientDescription {
+  font-size: 16px;
+  color: #9d9d9d;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  /* max-width: 1020px; */
+  background-color: #28242d;
+  border-radius: 10px;
+  padding: 16px;
+  height: min-content;
+  min-height: 80px;
+  text-align: justify;
+}
+
+.about-sml {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.about-md {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.about-lg {
+  font-size: 22px;
+  line-height: 28px;
+}
