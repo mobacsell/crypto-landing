@@ -1,3 +1,81 @@
+@keyframes arrowMove {
+  from {
+    top: 0;
+  }
+  25% {
+    top: -8px;
+  }
+  50% {
+    top: 0;
+  }
+  75% {
+    top: -4px;
+  }
+  to {
+    top: 0;
+    scale: unset;
+  }
+}
+
+@keyframes forwardRotation {
+  from {
+    transform: rotate(0deg);
+    scale: calc(0.8);
+  }
+  50% {
+    scale: calc(1.1);
+  }
+  to {
+    scale: calc(0.8);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes reverseRotation {
+  from {
+    transform: rotate(0deg);
+    scale: calc(0.8);
+  }
+  50% {
+    scale: calc(1.1);
+  }
+  to {
+    scale: calc(0.8);
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes candyMove {
+  from {
+    transform: rotate(0deg);
+    filter: blur(0.7px);
+  }
+  5% {
+    transform: rotate(-30deg);
+  }
+  8% {
+    transform: rotate(-5deg);
+  }
+  12% {
+    transform: rotate(-25deg);
+    filter: blur(0.8px);
+  }
+  18% {
+    transform: rotate(-5deg);
+  }
+  24% {
+    transform: rotate(-10deg);
+    filter: blur(0.9px);
+  }
+  30% {
+    transform: rotate(0deg);
+    filter: none;
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 .root {
   background: no-repeat center center
     url("../../assets/Promo/backgroundPict.png") #141118;
@@ -63,25 +141,6 @@
   line-height: 26px;
 }
 
-@keyframes arrowMove {
-  from {
-    top: 0;
-  }
-  25% {
-    top: -8px;
-  }
-  50% {
-    top: 0;
-  }
-  75% {
-    top: -4px;
-  }
-  to {
-    top: 0;
-    scale: unset;
-  }
-}
-
 .arrow {
   position: relative;
   margin-top: 74px;
@@ -112,6 +171,24 @@
   position: absolute;
 }
 
+.bitCoin,
+.eos,
+.sCrypt {
+  animation-name: forwardRotation;
+  animation-duration: 1.7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.ethereum,
+.tCrypt,
+.bitCoinBlur {
+  animation-name: reverseRotation;
+  animation-duration: 1.7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 .bitCoin {
   top: 225px;
   right: 154px;
@@ -120,6 +197,10 @@
 .candy {
   top: 270px;
   right: 296px;
+  animation-name: candyMove;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
 }
 
 .eos {
