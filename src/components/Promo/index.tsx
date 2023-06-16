@@ -2,10 +2,10 @@ import styles from "./Promo.module.css";
 import Image from "next/image";
 import { Button } from "@/shared/Button";
 
-import arrow from "@assets/Promo/Arrow.svg";
-import bitCoin from "@assets/Promo/BitCoin.svg";
-import candy from "@assets/Promo/Candy.svg";
-import eos from "@assets/Promo/Eos.svg";
+import arrow from "@assets/Promo/arrow.svg";
+import bitCoin from "@assets/Promo/bitCoin.svg";
+import candy from "@assets/Promo/candy.svg";
+import eos from "@assets/Promo/eos.svg";
 import ethereum from "@assets/Promo/ethereum.svg";
 import sCrypt from "@assets/Promo/sCrypt.svg";
 import tCrypt from "@assets/Promo/tCrypt.svg";
