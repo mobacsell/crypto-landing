@@ -36,3 +36,76 @@
 .purple {
   color: #dc4cfd;
 }
+
+@media (max-width: 1400px) {
+  .content {
+    font-size: 24px;
+    line-height: 28px;
+    gap: 72px;
+  }
+
+  .image {
+    width: 260px;
+  }
+
+  .list {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .content {
+    margin-top: 50px;
+    gap: 50px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .list {
+    margin-top: 34px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    font-size: 24px;
+    line-height: 28px;
+    width: 300px;
+    text-align: center;
+  }
+
+  .listHeader {
+    width: 300px;
+  }
+
+  .list {
+    width: 310px;
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 320px) {
+  .root {
+    width: 320px;
+  }
+}

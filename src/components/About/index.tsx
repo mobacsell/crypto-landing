@@ -12,7 +12,7 @@ export function About() {
           <Image src={author} alt="Автор" />
         </div>
         <div>
-          <p>
+          <p className={styles.listHeader}>
             Денисевич Адександр, ведущий разработчик
             <br />В <span className={styles.purple}>криптопроектах</span> с 2018
             года
