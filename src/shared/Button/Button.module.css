@@ -1,0 +1,44 @@
+.button {
+  height: 60px;
+  box-shadow: 0px 2px 8px 1px rgba(220, 76, 253, 0.25);
+  border-radius: 8px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s box-shadow;
+}
+
+.button:hover {
+  box-shadow: 0px 2px 8px 4px rgba(220, 76, 253, 0.6);
+  transition: 0.3s box-shadow;
+}
+
+.smButton {
+  width: 260px;
+}
+
+.mdButton {
+  width: 310px;
+}
+
+.smText {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.mdText {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.purpleLight {
+  background: linear-gradient(90deg, #9f4bfd 0%, #dc4cfd 100%);
+}
+
+.orangePurple {
+  background: linear-gradient(90deg, #fd764b 0%, #fd4cf6 100%);
+}
+
+.purpleOrangePurple {
+  background: linear-gradient(90deg, #9f4bfd 0%, #fd764b 46.35%, #dc4cfd 100%);
+}

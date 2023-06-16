@@ -1,4 +1,5 @@
 import styles from "./Reasons.module.css";
+import { Button } from "@/shared/Button";
 
 export function Reasons() {
   return (
@@ -48,7 +49,12 @@ export function Reasons() {
           </li>
         </ul>
       </div>
-      <button className={styles.button}>Скачать гайд</button>
+      <Button
+        text="Скачать гайд"
+        colorScheme="purpleLight"
+        buttonSize="smButton"
+        textSize="mdText"
+      />
     </section>
   );
 }

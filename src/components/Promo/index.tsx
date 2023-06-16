@@ -1,5 +1,6 @@
 import styles from "./Promo.module.css";
 import Image from "next/image";
+import { Button } from "@/shared/Button";
 
 import arrow from "@assets/Promo/Arrow.svg";
 import bitCoin from "@assets/Promo/BitCoin.svg";
@@ -37,7 +38,12 @@ export function Promo() {
             <span className={styles.purple}>зарабатывают большие деньги</span>
           </li>
         </ul>
-        <button className={styles.button}>Скачать гайд</button>
+        <Button
+          text="Скачать гайд"
+          colorScheme="purpleLight"
+          buttonSize="smButton"
+          textSize="mdText"
+        />
         <div className={styles.arrow}>
           <Image src={arrow} alt="стрелка" />
         </div>
