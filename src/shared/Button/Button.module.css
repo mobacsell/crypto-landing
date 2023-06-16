@@ -5,6 +5,7 @@
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-weight: 600;
   color: #fff;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   transition: 0.3s box-shadow;
 }
 
@@ -41,4 +42,22 @@
 
 .purpleOrangePurple {
   background: linear-gradient(90deg, #9f4bfd 0%, #fd764b 46.35%, #dc4cfd 100%);
+}
+
+@media (max-width: 1024px) {
+  .button:hover {
+    box-shadow: 0px 2px 8px 1px rgba(220, 76, 253, 0.25);
+  }
+}
+
+@media (max-width: 600px) {
+  .smText {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .smButton,
+  .mdButton {
+    width: 260px;
+  }
 }

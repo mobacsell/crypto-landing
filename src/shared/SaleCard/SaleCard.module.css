@@ -94,3 +94,19 @@
 .listItem:nth-child(n + 2) {
   margin-top: 6px;
 }
+
+@media (max-width: 600px) {
+  .root {
+    width: 300px;
+  }
+
+  .list {
+    width: 240px;
+  }
+
+  .smList,
+  .mdList {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
