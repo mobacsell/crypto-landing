@@ -11,6 +11,8 @@ import sCrypt from "@assets/Promo/sCrypt.svg";
 import tCrypt from "@assets/Promo/tCrypt.svg";
 
 export function Promo() {
+  const handlerArrowClick = () => {};
+
   return (
     <section className={styles.root}>
       <div className={styles.wrapper}>
@@ -44,7 +46,7 @@ export function Promo() {
           buttonSize="smButton"
           textSize="mdText"
         />
-        <div className={styles.arrow}>
+        <div className={styles.arrow} onClick={handlerArrowClick}>
           <Image src={arrow} alt="стрелка" />
         </div>
         <div className={styles.bitCoin}>
