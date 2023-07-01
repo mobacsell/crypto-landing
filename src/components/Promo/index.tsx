@@ -10,6 +10,27 @@ import ethereum from "@assets/Promo/ethereum.svg";
 import sCrypt from "@assets/Promo/sCrypt.svg";
 import tCrypt from "@assets/Promo/tCrypt.svg";
 
+const list = [
+  [
+    "Как все работает и ",
+    <span className={styles.light} key="1">
+      что такое крипта
+    </span>,
+  ],
+  [
+    "Зачем нужен ",
+    <span className={styles.light} key="2">
+      кошелек
+    </span>,
+  ],
+  [
+    "Почему на этом ",
+    <span className={styles.purple} key="3">
+      зарабатывают большие деньги
+    </span>,
+  ],
+];
+
 export function Promo() {
   const handlerArrowClick = () => {};
 
@@ -28,17 +49,9 @@ export function Promo() {
           <span className={styles.light}>Простым языком</span>
         </p>
         <ul className={styles.list}>
-          <li>
-            Как все работает и{" "}
-            <span className={styles.light}>что такое крипта</span>
-          </li>
-          <li>
-            Зачем нужен <span className={styles.light}>кошелек</span>
-          </li>
-          <li>
-            Почему на этом{" "}
-            <span className={styles.purple}>зарабатывают большие деньги</span>
-          </li>
+          {list.map((value, index) => {
+            return <li key={index}>{value}</li>;
+          })}
         </ul>
         <Button
           text="Скачать гайд"
