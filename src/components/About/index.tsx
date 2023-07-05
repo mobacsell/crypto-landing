@@ -3,6 +3,38 @@ import Image from "next/image";
 
 import author from "@assets/About/author.png";
 
+const list = [
+  [
+    "знаю ",
+    <span className={styles.purple} key="1">
+      изнутри
+    </span>,
+    " как всё устроено",
+  ],
+  [
+    "проверил на себе множество техник и",
+    <br key="1" />,
+    "4х кратно",
+    <span className={styles.purple} key="1">
+      {" "}
+      увеличил доход
+    </span>,
+    " за 2 года",
+  ],
+  [
+    "ежедневно пользуюсь ",
+    <span className={styles.purple} key="1">
+      криптой в жизни
+    </span>,
+  ],
+  [
+    "умею объяснять ",
+    <span className={styles.purple} key="1">
+      просто
+    </span>,
+  ],
+];
+
 export function About() {
   return (
     <section className={styles.root}>
@@ -18,21 +50,9 @@ export function About() {
             года
           </p>
           <ul className={styles.list}>
-            <li>
-              знаю <span className={styles.purple}>изнутри</span>, как всё
-              устроено
-            </li>
-            <li>
-              проверил на себе множество техник и<br /> 4х кратно
-              <span className={styles.purple}> увеличил доход</span> за 2 года
-            </li>
-            <li>
-              ежедневно пользуюсь{" "}
-              <span className={styles.purple}>криптой в жизни</span>
-            </li>
-            <li>
-              умею объяснять <span className={styles.purple}>просто</span>
-            </li>
+            {list.map((value, index) => {
+              return <li key={index}>{value}</li>;
+            })}
           </ul>
         </div>
       </div>
