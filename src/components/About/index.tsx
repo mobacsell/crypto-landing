@@ -15,7 +15,7 @@ const list = [
     "проверил на себе множество техник и",
     <br key="1" />,
     "4х кратно",
-    <span className={styles.purple} key="1">
+    <span className={styles.purple} key="2">
       {" "}
       увеличил доход
     </span>,
