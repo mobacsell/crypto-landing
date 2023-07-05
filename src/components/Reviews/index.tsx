@@ -12,7 +12,6 @@ import face2 from "@assets/Reviews/face-2.png";
  */
 const listContent = [
   {
-    id: 1,
     image: face1,
     name: "Яна Никитина",
     description: "",
@@ -21,7 +20,6 @@ const listContent = [
     fontSize: "about-sm",
   },
   {
-    id: 2,
     image: face1,
     name: "Терехова Светлана",
     description: "художник",
@@ -30,7 +28,6 @@ const listContent = [
     fontSize: "about-md",
   },
   {
-    id: 3,
     image: face2,
     name: "Максим Липов",
     description: "техник 2 категории",
@@ -39,7 +36,6 @@ const listContent = [
     fontSize: "about-lg",
   },
   {
-    id: 4,
     image: face2,
     name: "Олег Винельников",
     description: "врач-онколог",
@@ -53,9 +49,9 @@ export function Reviews() {
     <section className={styles.root}>
       <h2 className={styles.header}>Отзывы первых участников</h2>
       <ul className={styles.list}>
-        {listContent.map((value) => {
+        {listContent.map((value, index) => {
           return (
-            <li className={styles.itemContent} key={value.id}>
+            <li className={styles.itemContent} key={index}>
               <div className={styles.clientInfo}>
                 <Image src={value.image} alt={`фотография ${value.name}`} />
                 <h3 className={styles.clientName}>{value.name}</h3>
