@@ -41,7 +41,7 @@ export function About() {
       <h2 className={styles.header}>Кто составил данный гайд</h2>
       <div className={styles.content}>
         <div className={styles.image}>
-          <Image src={author} alt="Автор" />
+          <Image src={author} alt="Автор" quality={100} />
         </div>
         <div>
           <p className={styles.listHeader}>
