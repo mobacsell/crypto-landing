@@ -1,12 +1,170 @@
 import { SaleCard } from "@/shared/SaleCard";
 import styles from "./Sales.module.css";
+import { SaleCardProps } from "@/types/saleCardProps";
+
+const cardsDataList: SaleCardProps[] = [
+  {
+    header: "Базовый",
+    description: [
+      "Отлично подходит для ознакомления со",
+      <br key="1" />,
+      "всеми основными понятиями.",
+      <br key="2" />,
+      <span className={styles.purple} key="3">
+        Простым языком
+      </span>,
+    ],
+    oldPrice: "3000 р.",
+    currentPrice: "Бесплатно",
+    btnProps: {
+      text: "Скачать pdf",
+      colorScheme: "purpleLight",
+      buttonSize: "mdButton",
+      textSize: "mdText",
+    },
+    listTextSize: "mdList",
+    listColor: "purpleList",
+    list: [
+      [
+        "Что такое ",
+        <span className={styles.purpleLight} key="1">
+          крипта
+        </span>,
+        " и ",
+        <span className={styles.purpleLight} key="2">
+          блокчейн
+        </span>,
+      ],
+      [
+        "Почему это ",
+        <span className={styles.purple} key="1">
+          безопасно
+        </span>,
+      ],
+      [
+        "Что такое ",
+        <span className={styles.purpleLight} key="1">
+          кошелек
+        </span>,
+      ],
+      [
+        "Почему это ",
+        <span className={styles.purple} key="1">
+          прибыльно
+        </span>,
+      ],
+    ],
+  },
+  {
+    header: "Продвинутый",
+    oldPrice: "35000 р.",
+    currentPrice: "20,000 р.",
+    listHeader: "Базовый, плюс:",
+    btnProps: {
+      text: "Запись на консультацию",
+      colorScheme: "purpleOrangePurple",
+      buttonSize: "mdButton",
+      textSize: "smText",
+    },
+    listTextSize: "smList",
+    listColor: "purpleList",
+    list: [
+      [
+        "Как создать себе ",
+        <span className={styles.purpleLight} key="1">
+          кошелек
+        </span>,
+        ". ",
+        <span className={styles.purpleLight} key="2">
+          По шагам
+        </span>,
+      ],
+      [
+        "Как и где обменять ",
+        <span className={styles.purple} key="1">
+          токены на рубли
+        </span>,
+        " Биржа, ",
+        <span className={styles.bold} key="2">
+          p2p
+        </span>,
+        ", вывод на карту и обратно",
+      ],
+      [
+        "Что такое ",
+        <span className={styles.orangeGradient} key="1">
+          NFT
+        </span>,
+        " и как ими торговать",
+      ],
+      [
+        'Что такое "эфир" и чем он отличается от ',
+        <span className={styles.green} key="1">
+          USDT
+        </span>,
+        ". Различия ",
+        <span className={styles.orange} key="2">
+          Bitcoin
+        </span>,
+        " и ",
+        <span className={styles.purple} key="3">
+          Etherium
+        </span>,
+      ],
+      [
+        "Как ",
+        <span className={styles.purple} key="1">
+          безопасно
+        </span>,
+        " хранить средства в ",
+        <span className={styles.purple} key="2">
+          токенах
+        </span>,
+        " и получать с них ",
+        <span className={styles.purpleLight} key="3">
+          доход 15%
+        </span>,
+        " годовых с ",
+        <span className={styles.purple} key="4">
+          выводом в любое время
+        </span>,
+      ],
+      [
+        <span className={styles.grey} key="1">
+          Более глубокие технические особенности (по запросу)
+        </span>,
+      ],
+    ],
+  },
+  {
+    header: "Индивидуальный",
+    description: [
+      "Полноценное Наставничество.",
+      <br key="1" />,
+      "Zoom звонок, 2-3 дня. Вся нужная",
+      <br key="2" />,
+      "информация",
+      <br key="3" />,
+      <span className={styles.purple} key="4">
+        Простым языком
+      </span>,
+    ],
+    oldPrice: "750000 р.",
+    currentPrice: "50,000 р.",
+    listHeader: "Продвинутый, плюс:",
+    btnProps: {
+      text: "Запись на консультацию",
+      colorScheme: "orangePurple",
+      buttonSize: "mdButton",
+      textSize: "smText",
+    },
+    listTextSize: "mdList",
+    listColor: "orangeList",
+    list: [["Наставничество и консультация по всем вопросам в течение месяца"]],
+  },
+];
 
 export function Sales() {
-  const brElement = <br />;
-  const setSpan = (text: string, style: string) => {
-    return <span className={`${styles[style]}`}>{text}</span>;
-  };
-
   return (
     <section className={styles.root}>
       <h2 className={styles.header}>Получить свой гайд</h2>
@@ -17,156 +175,9 @@ export function Sales() {
         Цены действительны на последние 4 места
       </p>
       <div className={styles.cardWrapper}>
-        <SaleCard
-          header="Базовый"
-          description={[
-            "Отлично подходит для ознакомления со",
-            brElement,
-            "всеми основными понятиями.",
-            brElement,
-            setSpan("Простым языком", "purple"),
-          ]}
-          oldPrice="3000 р."
-          currentPrice="Бесплатно"
-          btnProps={{
-            text: "Скачать pdf",
-            colorScheme: "purpleLight",
-            buttonSize: "mdButton",
-            textSize: "mdText",
-          }}
-          listTextSize="mdList"
-          listColor="purpleList"
-          list={[
-            {
-              id: 1,
-              text: [
-                "Что такое ",
-                setSpan("крипта", "purpleLight"),
-                " и ",
-                setSpan("блокчейн", "purpleLight"),
-              ],
-            },
-            {
-              id: 2,
-              text: ["Почему это ", setSpan("безопасно", "purple")],
-            },
-            {
-              id: 3,
-              text: ["Что такое ", setSpan("кошелек", "purpleLight")],
-            },
-            {
-              id: 4,
-              text: ["Почему это ", setSpan("прибыльно", "purple")],
-            },
-          ]}
-        />
-        <SaleCard
-          header="Продвинутый"
-          oldPrice="35000 р."
-          currentPrice="20,000 р."
-          listHeader="Базовый, плюс:"
-          btnProps={{
-            text: "Запись на консультацию",
-            colorScheme: "purpleOrangePurple",
-            buttonSize: "mdButton",
-            textSize: "smText",
-          }}
-          listTextSize="smList"
-          listColor="purpleList"
-          list={[
-            {
-              id: 1,
-              text: [
-                "Как создать себе ",
-                setSpan("кошелек", "purpleLight"),
-                ". ",
-                setSpan("По шагам", "purpleLight"),
-              ],
-            },
-            {
-              id: 2,
-              text: [
-                "Как и где обменять ",
-                setSpan("токены на рубли", "purple"),
-                " Биржа, ",
-                setSpan("p2p", "bold"),
-                ", вывод на карту и обратно",
-              ],
-            },
-            {
-              id: 3,
-              text: [
-                "Что такое ",
-                setSpan("NFT", "orangeGradient"),
-                " и как ими торговать",
-              ],
-            },
-            {
-              id: 4,
-              text: [
-                'Что такое "эфир" и чем он отличается от ',
-                setSpan("USDT", "green"),
-                ". Различия ",
-                setSpan("Bitcoin", "orange"),
-                " и ",
-                setSpan("Etherium", "purple"),
-              ],
-            },
-            {
-              id: 5,
-              text: [
-                "Как ",
-                setSpan("безопасно", "purple"),
-                " хранить средства в ",
-                setSpan("токенах", "purpleLight"),
-                " и получать с них ",
-                setSpan("доход 15%", "purpleLight"),
-                " годовых с ",
-                setSpan("выводом в любое время", "purple"),
-              ],
-            },
-            {
-              id: 6,
-              text: [
-                setSpan(
-                  "Более глубокие технические особенности (по запросу)",
-                  "grey"
-                ),
-              ],
-            },
-          ]}
-        />
-        <SaleCard
-          header="Индивидуальный"
-          description={[
-            "Полноценное Наставничество.",
-            brElement,
-            "Zoom звонок, 2-3 дня. Вся нужная",
-            brElement,
-            "информация",
-            brElement,
-            setSpan("Простым языком", "purple"),
-          ]}
-          oldPrice="750000 р."
-          currentPrice="50,000 р."
-          listHeader="Продвинутый, плюс:"
-          btnProps={{
-            text: "Запись на консультацию",
-            colorScheme: "orangePurple",
-            buttonSize: "mdButton",
-            textSize: "smText",
-          }}
-          listTextSize="mdList"
-          listColor="orangeList"
-          list={[
-            {
-              id: 1,
-              text: [
-                "Наставничество и консультация по всем вопросам в течение месяца",
-              ],
-            },
-          ]}
-        />
+        {cardsDataList.map((value, index) => {
+          return <SaleCard {...value} key={index} />;
+        })}
       </div>
     </section>
   );

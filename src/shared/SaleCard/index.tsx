@@ -1,6 +1,6 @@
 import { Button } from "../Button";
 import styles from "./SaleCard.module.css";
-import { SaleCardProps } from "./types";
+import { SaleCardProps } from "@/types/saleCardProps";
 
 export function SaleCard({
   header,
@@ -25,10 +25,10 @@ export function SaleCard({
       <ul
         className={`${styles.list} ${styles[listColor]} ${styles[listTextSize]}`}
       >
-        {list.map((value) => {
+        {list.map((value, index) => {
           return (
-            <li className={styles.listItem} key={value.id}>
-              {value.text}
+            <li className={styles.listItem} key={index}>
+              {value}
             </li>
           );
         })}
