@@ -48,28 +48,31 @@
 @keyframes candyMove {
   from {
     transform: rotate(0deg);
-    filter: blur(0.7px);
-  }
-  5% {
-    transform: rotate(-30deg);
-  }
-  8% {
-    transform: rotate(-5deg);
-  }
-  12% {
-    transform: rotate(-25deg);
     filter: blur(0.8px);
   }
-  18% {
+  5% {
+    transform: rotate(-12deg);
+  }
+  10% {
     transform: rotate(-5deg);
   }
-  24% {
-    transform: rotate(-10deg);
-    filter: blur(0.9px);
+  15% {
+    transform: rotate(-15deg);
+  }
+  20% {
+    transform: rotate(-5deg);
+  }
+  25% {
+    transform: rotate(-15deg);
   }
   30% {
+    transform: rotate(-5deg);
+  }
+  35% {
+    transform: rotate(-12deg);
+  }
+  42% {
     transform: rotate(0deg);
-    filter: none;
   }
   to {
     transform: rotate(0deg);
@@ -96,7 +99,7 @@
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 80px;
-  line-height: 98px;
+  line-height: normal;
   text-align: center;
   color: #fff;
 }
@@ -117,7 +120,7 @@
 }
 
 .list {
-  margin-top: 8px;
+  margin-top: 4px;
   margin-bottom: 56px;
   list-style-type: disc;
   list-style-position: inside;
@@ -198,9 +201,9 @@
   top: 270px;
   right: 296px;
   animation-name: candyMove;
-  animation-duration: 3.5s;
+  animation-duration: 2.5s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-in-out;
 }
 
 .eos {
@@ -224,7 +227,7 @@
 }
 
 .tCrypt {
-  top: 146px;
+  top: 126px;
   left: 160px;
 }
 
@@ -310,7 +313,7 @@
 @media (max-width: 768px) {
   .wrapper {
     max-width: 600px;
-    padding-top: 118px;
+    /* padding-top: 118px; */
   }
 
   .header {
@@ -319,7 +322,7 @@
   }
 
   .description {
-    margin-top: 60px;
+    /* margin-top: 60px; */
     font-size: 18px;
     line-height: 22px;
   }
@@ -330,58 +333,6 @@
     color: #a7a7a7;
   }
 
-  .bitCoin {
-    top: 38px;
-    right: 156px;
-  }
-
-  .eos {
-    top: 360px;
-    right: 16px;
-  }
-
-  .ethereum {
-    top: 320px;
-    left: 6px;
-  }
-
-  .sCrypt {
-    right: 86px;
-  }
-
-  .tCrypt {
-    top: 18px;
-    left: 106px;
-  }
-
-  .bitCoinBlur {
-    left: 36px;
-    transform: scale(1.2);
-  }
-}
-
-@media (max-width: 600px) {
-  .wrapper {
-    max-width: 320px;
-    padding-top: 68px;
-  }
-
-  .header {
-    font-size: 32px;
-    line-height: 40px;
-  }
-
-  .description {
-    margin-top: 48px;
-    font-size: 14px;
-    line-height: 18px;
-  }
-
-  .list {
-    font-size: 14px;
-    line-height: 18px;
-  }
-
   .bitCoin,
   .eos,
   .ethereum,
@@ -390,9 +341,31 @@
   .bitCoinBlur {
     display: none;
   }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    max-width: 320px;
+  }
+
+  .header {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .list {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 76px;
+  }
 
   .arrow {
-    margin-top: 54px;
+    margin-top: 112px;
   }
 }
 
