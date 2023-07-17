@@ -1,6 +1,6 @@
 .root {
   padding-top: 96px;
-  padding-bottom: 156px;
+  padding-bottom: 192px;
   background: linear-gradient(179.44deg, #141118 0.51%, #110a18 99.55%);
 }
 
@@ -50,7 +50,7 @@
 
 .contentDescription {
   color: #fff;
-  margin-top: 16px;
+  margin-top: 8px;
 }
 
 @media (max-width: 1400px) {
