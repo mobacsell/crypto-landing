@@ -22,15 +22,15 @@
   margin-top: 78px;
   font-weight: 600;
   font-size: 32px;
-  line-height: 40px;
+  line-height: 44px;
   color: #fff;
 }
 
 .list {
-  margin-top: 70px;
+  margin-top: 58px;
   list-style-type: disc;
   list-style-position: inside;
-  margin-left: 14px;
+  margin-left: 4px;
 }
 
 .purple {
