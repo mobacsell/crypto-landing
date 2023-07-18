@@ -2,16 +2,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 370px;
+  width: 350px;
   height: fit-content;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
   background-color: #f1f1f1;
   border-radius: 16px;
   padding: 24px 0;
   box-shadow: 0 5px 20px #ffffff44;
 }
 
+.root:nth-child(2) {
+  width: 370px;
+}
+
+.root:nth-child(2) > .list {
+  margin: 6px 0 20px 40px;
+}
+
 .header {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 28px;
   line-height: 34px;
@@ -20,6 +28,7 @@
 
 .description {
   margin-top: 12px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -35,13 +44,16 @@
   padding-left: 8px;
   width: 200px;
   height: 40px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 500;
   background-color: #f1f1f1;
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
 
 .oldPrice {
-  font-weight: 600;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 500;
   font-size: 12px;
   line-height: 14px;
   text-decoration-line: line-through;
@@ -59,6 +71,7 @@
   align-self: flex-start;
   margin-top: 24px;
   margin-left: 44px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
@@ -66,8 +79,10 @@
 }
 
 .list {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 600;
   width: 320px;
-  margin: 6px 0 20px 40px;
+  margin: 6px 0 20px 60px;
   color: #363636;
 }
 
@@ -95,9 +110,27 @@
   margin-top: 6px;
 }
 
+@media (max-width: 1400px) {
+  .root:nth-child(2) > .listHeader {
+    margin-left: 70px;
+  }
+
+  .root:nth-child(2) {
+    width: 420px;
+  }
+}
+
 @media (max-width: 600px) {
-  .root {
+  .root:nth-child(n) {
     width: 300px;
+  }
+
+  .root:nth-child(n) > .list {
+    margin: 6px 0 20px 40px;
+  }
+
+  .root:nth-child(n + 2) > .listHeader {
+    margin-left: 48px;
   }
 
   .list {
