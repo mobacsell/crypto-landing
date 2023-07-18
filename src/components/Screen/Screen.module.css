@@ -12,3 +12,13 @@
     width: 100vw;
   }
 }
+
+@media (max-width: 320px) {
+  .root {
+    width: 320px;
+  }
+
+  .imageWrapper {
+    width: 100%;
+  }
+}
