@@ -1,4 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Лендинг Просто о крипте на фантиках
+
+Адаптивная верстка лендинга Просто о крипте на фантиках.    
+Проект развернут на [Netlify](https://mobacsell-crypto-landing.netlify.app/)
+
+## Используемые технологии:
+
+* **Next.js**
+* **TypeScript**
 
 ## Getting Started
 
