@@ -126,11 +126,11 @@
   }
 
   .root:nth-child(n) > .list {
-    margin: 6px 0 20px 40px;
+    margin: 6px 0 20px 30px;
   }
 
   .root:nth-child(n + 2) > .listHeader {
-    margin-left: 48px;
+    margin-left: 44px;
   }
 
   .list {
