@@ -4,9 +4,9 @@
   align-items: center;
   padding-top: 78px;
   padding-bottom: 58px;
-  background: linear-gradient(179.44deg, #141118 0.51%, #110a18 99.55%);
+  background: var(--bgcolor);
   color: #fff;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: var(--font-1);
   font-weight: 600;
 }
 
@@ -46,11 +46,11 @@
 }
 
 .button {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: var(--font-3);
   font-size: 22px;
   width: 260px;
   height: 60px;
-  background: linear-gradient(90deg, #9f4bfd 0%, #dc4cfd 100%);
+  background: var(--btnBackground);
   box-shadow: 0px 2px 8px 1px rgba(220, 76, 253, 0.25);
   border-radius: 8px;
 }

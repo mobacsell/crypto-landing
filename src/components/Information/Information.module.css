@@ -1,11 +1,11 @@
 .root {
   padding-top: 96px;
   padding-bottom: 192px;
-  background: linear-gradient(179.44deg, #141118 0.51%, #110a18 99.55%);
+  background: var(--bgcolor);
 }
 
 .header {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: var(--font-1);
   font-weight: 600;
   font-size: 60px;
   line-height: 72px;
@@ -33,7 +33,7 @@
 
 .contentHeader,
 .contentDescription {
-  font-family: "Montserrat";
+  font-family: var(--font-1);
   font-weight: 600;
   font-size: 22px;
   line-height: 27px;
@@ -45,7 +45,7 @@
 }
 
 .contentHeader {
-  color: #dc4cfd;
+  color: var(--textColor);
 }
 
 .contentDescription {

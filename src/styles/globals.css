@@ -6,6 +6,12 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --font-1: "Montserrat", Arial, Helvetica, sans-serif;
+  --font-2: "Roboto", Arial, Helvetica, sans-serif;
+  --font-3: "Inter", Arial, Helvetica, sans-serif;
+  --bgcolor: linear-gradient(179.44deg, #141118 0.51%, #110a18 99.55%);
+  --btnBackground: linear-gradient(90deg, #9f4bfd 0%, #dc4cfd 100%);
+  --textColor: #dc4cfd;
   user-select: none;
 }
 

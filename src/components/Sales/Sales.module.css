@@ -3,11 +3,11 @@
   flex-direction: column;
   align-items: center;
   padding: 60px 0 54px;
-  background: linear-gradient(179.44deg, #141118 0.51%, #110a18 99.55%);
+  background: var(--bgcolor);
 }
 
 .header {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: var(--font-1);
   font-weight: 600;
   font-size: 60px;
   line-height: 74px;
@@ -16,7 +16,7 @@
 
 .description {
   margin: 28px 0 40px;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: var(--font-2);
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;

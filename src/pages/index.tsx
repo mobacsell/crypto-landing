@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Promo } from "@/components/Promo";
-import { Infromation } from "@/components/Information";
+import { Information } from "@/components/Information";
 import { About } from "@/components/About";
 import { Reasons } from "@/components/Reasons";
 import { Reviews } from "@/components/Reviews";
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main>
       <Promo />
-      <Infromation />
+      <Information />
       <About />
       <Reasons />
       <Reviews />

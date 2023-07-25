@@ -1,6 +1,7 @@
 import styles from "./Promo.module.css";
 import Image from "next/image";
 import { Button } from "@/shared/Button";
+import { list } from "./data";
 
 import arrow from "@assets/Promo/arrow.svg";
 import bitCoin from "@assets/Promo/bitCoin.svg";
@@ -9,27 +10,6 @@ import eos from "@assets/Promo/eos.svg";
 import ethereum from "@assets/Promo/ethereum.svg";
 import sCrypt from "@assets/Promo/sCrypt.svg";
 import tCrypt from "@assets/Promo/tCrypt.svg";
-
-const list = [
-  [
-    "Как все работает и ",
-    <span className={styles.light} key="1">
-      что такое крипта
-    </span>,
-  ],
-  [
-    "Зачем нужен ",
-    <span className={styles.light} key="2">
-      кошелек
-    </span>,
-  ],
-  [
-    "Почему на этом ",
-    <span className={styles.purple} key="3">
-      зарабатывают большие деньги
-    </span>,
-  ],
-];
 
 export function Promo() {
   const handlerArrowClick = () => {};

@@ -2,7 +2,7 @@
   height: 60px;
   box-shadow: 0px 2px 8px 1px rgba(220, 76, 253, 0.25);
   border-radius: 8px;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: var(--font-3);
   font-weight: 600;
   color: #fff;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -33,7 +33,7 @@
 }
 
 .purpleLight {
-  background: linear-gradient(90deg, #9f4bfd 0%, #dc4cfd 100%);
+  background: var(--btnBackground);
 }
 
 .orangePurple {

@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(179.44deg, #141118 0.51%, #110a18 99.55%);
+  background: var(--bgcolor);
   padding-top: 70px;
   padding-bottom: 102px;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: var(--font-1);
 }
 
 .header {
@@ -34,7 +34,7 @@
 }
 
 .purple {
-  color: #dc4cfd;
+  color: var(--textColor);
 }
 
 @media (max-width: 1400px) {

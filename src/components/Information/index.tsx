@@ -1,40 +1,8 @@
 import styles from "./Information.module.css";
 import Image from "next/image";
+import { list } from "./data";
 
-import blockchain from "@assets/Information/blockchain.svg";
-import tokens from "@assets/Information/tokens.svg";
-import wallet from "@assets/Information/wallet.svg";
-
-const list = [
-  {
-    imagePath: tokens,
-    imageName: "Логотип эфириум",
-    header: "Крипта и токены",
-    description: [
-      "Что это такое",
-      <br key="1" />,
-      "Почему на них зарабатывают",
-    ],
-  },
-  {
-    imagePath: blockchain,
-    imageName: "Логотип блокчейн",
-    header: "Блокчейн",
-    description: [
-      "Что это такое",
-      <br key="1" />,
-      "Почему на них зарабатывают",
-    ],
-  },
-  {
-    imagePath: wallet,
-    imageName: "Кошелек",
-    header: "Кошелек",
-    description: ["Для чего он нужен", <br key="2" />, "Можно ли без него"],
-  },
-];
-
-export function Infromation() {
+export function Information() {
   return (
     <section className={styles.root}>
       <div className={styles.wrapper}>
